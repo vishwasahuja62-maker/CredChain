@@ -7,6 +7,43 @@ CredChain is a decentralized credential verification platform that solves the re
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Solidity](https://img.shields.io/badge/Solidity-0.8.24-blue)](blockchain/contracts/CredChain.sol)
 [![Network](https://img.shields.io/badge/Network-Sepolia-purple)](https://sepolia.etherscan.io/address/0x9961d602bc6FE437F8dff53f928c044b56569935)
+[![Tests](https://img.shields.io/badge/Tests-9%2F9%20Passing-brightgreen)](blockchain/test/CredChain.js)
+[![Build](https://img.shields.io/badge/Build-Clean-brightgreen)](frontend/vite.config.ts)
+
+---
+
+## 📋 Table of Contents
+
+- [🎬 Demo Video](#-demo-video)
+- [🔗 Deployed Contract](#-deployed-contract)
+- [❗ Problem](#problem)
+- [✅ Solution](#solution)
+- [✨ Features](#features)
+- [📸 Screenshots](#-screenshots)
+- [🏗️ Architecture](#architecture)
+- [🛠️ Tech Stack](#tech-stack)
+- [🚀 Getting Started](#getting-started)
+- [🌍 Environment Variables](#environment-variables)
+- [📦 Deployment](#deployment)
+- [🧪 Testing](#testing)
+- [📄 Smart Contract](#smart-contract)
+- [🔐 Security Considerations](#security-considerations)
+- [📁 Project Structure](#project-structure)
+- [⚠️ Known Limitations](#known-limitations)
+- [🔮 Future Improvements](#future-improvements)
+- [📜 License](#license)
+
+---
+
+## 🎬 Demo Video
+
+> A complete end-to-end walkthrough of the CredChain platform — from connecting a MetaMask wallet as an authorized issuer, filling out the credential form, uploading metadata to IPFS via Pinata, minting a live soulbound NFT on the Sepolia Ethereum testnet, and finally verifying it in real-time using the public verification portal with a dynamically generated QR code.
+
+https://github.com/vishwasahuja62-maker/CredChain/raw/main/video/Demo%20Video.mp4
+
+> **📌 Note:** If the video doesn't play inline, click [here](video/Demo%20Video.mp4) to download and watch it locally.
+
+---
 
 ## 🔗 Deployed Contract
 
