@@ -29,7 +29,6 @@ CredChain is a decentralized credential verification platform that solves the re
 - [📄 Smart Contract](#smart-contract)
 - [🔐 Security Considerations](#security-considerations)
 - [📁 Project Structure](#project-structure)
-- [⚠️ Known Limitations](#known-limitations)
 - [🔮 Future Improvements](#future-improvements)
 - [📜 License](#license)
 
@@ -319,14 +318,6 @@ CredChain/
 ├── LICENSE
 └── .gitignore
 ```
-
-## Known Limitations
-
-- No formal security audit
-- Single admin key (no multi-sig)
-- IPFS metadata can theoretically be unpinned (use redundant gateways in production)
-- No batch minting for large institutions
-- Frontend contract address is hardcoded (would use env var in production)
 
 ## Future Improvements
 
