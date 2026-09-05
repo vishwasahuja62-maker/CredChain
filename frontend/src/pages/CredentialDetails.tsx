@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
-import { useWeb3 } from '../Web3Context';
+import { useWeb3, CONTRACT_ADDRESS, ABI } from '../Web3Context';
 import { getIPFSUrl } from '../utils/pinata';
 import { QRCodeSVG } from 'qrcode.react';
-import { CheckCircle2, XCircle, AlertCircle, ExternalLink, Loader2, Link as LinkIcon, Download } from 'lucide-react';
+import { CheckCircle2, XCircle, AlertCircle, Loader2, Link as LinkIcon } from 'lucide-react';
 import { ethers } from 'ethers';
 
 interface CredentialMetadata {
@@ -20,7 +20,7 @@ interface CredentialMetadata {
 
 export default function CredentialDetails() {
   const { tokenId } = useParams();
-  const { provider, contract, isIssuer, connectWallet } = useWeb3();
+  const { contract, isIssuer } = useWeb3();
 
   const [metadata, setMetadata] = useState<CredentialMetadata | null>(null);
   const [onChainOwner, setOnChainOwner] = useState('');
@@ -31,7 +31,7 @@ export default function CredentialDetails() {
 
   useEffect(() => {
     fetchCredential();
-  }, [tokenId, contract, provider]);
+  }, [tokenId, contract]);
 
   const fetchCredential = async () => {
     if (!tokenId) return;
@@ -44,10 +44,6 @@ export default function CredentialDetails() {
       if (!readContract) {
         if (!window.ethereum) throw new Error("MetaMask not found. Please install a Web3 wallet to verify on-chain.");
         const fallbackProvider = new ethers.BrowserProvider(window.ethereum);
-        // Using same ABI & Address from Web3Context, so we need to import them or re-declare
-        // For simplicity, we just ask the user to connect to verify if no contract context exists,
-        // but a real app would use a default RPC provider. Let's just use window.ethereum for now.
-        const { CONTRACT_ADDRESS, ABI } = await import('../Web3Context');
         readContract = new ethers.Contract(CONTRACT_ADDRESS, ABI, fallbackProvider);
       }
 
