@@ -1,8 +1,8 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { ethers } from 'ethers';
 
-// You will need to replace this with your actual contract address after deployment
-export const CONTRACT_ADDRESS = "0x5FbDB2315678afecb367f032d93F642f64180aa3"; 
+// Sepolia Testnet Deployment
+export const CONTRACT_ADDRESS = "0x9961d602bc6FE437F8dff53f928c044b56569935";
 
 // ABI snippet for necessary functions
 export const ABI = [
