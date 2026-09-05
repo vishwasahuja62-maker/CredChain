@@ -39,6 +39,68 @@ CredChain provides a trustless verification pipeline:
 | 📱 QR Code Sharing | Mobile-first verification experience with auto-generated QR codes |
 | ❌ Revocation | Permanent on-chain revocation with preserved audit trail |
 
+## 📸 Screenshots
+
+### 🎨 Frontend UI
+
+**Landing Page & Marketing**
+![Landing Page](images/Frontend%20UI%20Screenshots/Landing%20Page.png)
+*The stunning, Web3-native landing page featuring glassmorphism and animated backgrounds.*
+
+**Verify Section**
+![Verify Section](images/Frontend%20UI%20Screenshots/Verify%20Section.png)
+*The core verification portal where users can enter a credential ID to verify its authenticity.*
+
+**Issuer Dashboard**
+![Issuer Dashboard](images/Frontend%20UI%20Screenshots/Issuer%20Dashboard.png)
+*The secure dashboard for authorized institutions to mint new soulbound credentials.*
+
+**Full Digital Certificate Modal**
+![Full Digital Certificate Modal](images/Frontend%20UI%20Screenshots/Full%20Digital%20Certificate%20Modal.png)
+*A beautiful, detailed view of a minted credential with all IPFS metadata and blockchain status.*
+
+**Scannable Verification QR Code**
+![Scannable Verification QR Code](images/Frontend%20UI%20Screenshots/Scannable%20Verification%20QR%20Code.png)
+*Mobile-ready QR codes generated dynamically for instant credential sharing and verification.*
+
+**Revoked Certificate State View**
+![Revoked Certificate State View](images/Frontend%20UI%20Screenshots/Revoked%20Certificate%20State%20View.png)
+*Clear visual indicators when a credential has been cryptographically revoked by the issuer.*
+
+**Bento Grid Section**
+![Bento Grid Section](images/Frontend%20UI%20Screenshots/Bento%20Grid%20Section.png)
+*Modern Bento-style layout highlighting platform features.*
+
+**Trust Protocol Status Box**
+![Trust Protocol Status Box](images/Frontend%20UI%20Screenshots/Trust%20Protocol%20Status%20Box.png)
+*Live blockchain verification status indicators showing cryptographic proof.*
+
+### ⚙️ Technical & Blockchain Infrastructure
+
+**Main Sepolia Etherscan Overview**
+![Main Sepolia Etherscan Overview](images/Technical%20%26%20Blockchain%20Infrastructure%20Screenshots/Main%20Sepolia%20Etherscan%20Overview.png)
+*The verified CredChain smart contract deployed on the Sepolia Ethereum testnet.*
+
+**Live Contract Deployment Receipt**
+![Live Contract Deployment Receipt](images/Technical%20%26%20Blockchain%20Infrastructure%20Screenshots/Live%20Contract%20Deployment%20Receipt.png)
+*The on-chain transaction receipt for the initial deployment of the CredChain protocol.*
+
+**Live Mint Transaction Event Receipt**
+![Live Mint Transaction Event Receipt](images/Technical%20%26%20Blockchain%20Infrastructure%20Screenshots/Live%20Mint%20Transaction%20Event%20Receipt.png)
+*Etherscan logs showing the `CredentialIssued` event emitted during a live minting operation.*
+
+**Complete Hardhat Test Terminal Output**
+![Complete Hardhat Test Terminal Output](images/Technical%20%26%20Blockchain%20Infrastructure%20Screenshots/Complete%20Hardhat%20Test%20Terminal%20Output.png)
+*Comprehensive local test suite ensuring smart contract security and soulbound behavior.*
+
+**Clean Frontend Production Build Matrix**
+![Clean Frontend Production Build Matrix](images/Technical%20%26%20Blockchain%20Infrastructure%20Screenshots/Clean%20Frontend%20Production%20Build%20Matrix.png)
+*Optimized Vite production build output demonstrating a lightweight frontend bundle.*
+
+**Pinata Dashboard Asset Hub**
+![Pinata Dashboard Asset Hub](images/Technical%20%26%20Blockchain%20Infrastructure%20Screenshots/Pinata%20Dashboard%20Asset%20Hub.png)
+*IPFS decentralized storage hub managing the credential JSON metadata files.*
+
 ## Architecture
 
 ```
