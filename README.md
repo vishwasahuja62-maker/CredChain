@@ -38,9 +38,9 @@ CredChain is a decentralized credential verification platform that solves the re
 
 > A complete end-to-end walkthrough of the CredChain platform — from connecting a MetaMask wallet as an authorized issuer, filling out the credential form, uploading metadata to IPFS via Pinata, minting a live soulbound NFT on the Sepolia Ethereum testnet, and finally verifying it in real-time using the public verification portal with a dynamically generated QR code.
 
-https://github.com/vishwasahuja62-maker/CredChain/raw/main/video/Demo%20Video.mp4
+https://github.com/vishwasahuja62-maker/CredChain/raw/main/video/Original%20Demo%20Video.mp4
 
-> **📌 Note:** If the video doesn't play inline, click [here](video/Demo%20Video.mp4) to download and watch it locally.
+> **📌 Note:** If the video doesn't play inline, click [here](video/Original%20Demo%20Video.mp4) to download and watch it locally.
 
 ---
 
